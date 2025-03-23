@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="json.css">
+    <style>
+        body, html {
+    height: 100%;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .bg-image {
+    /* The image used */
+    background-image: url("images/l7.jpg");
+  
+    /* Add the blur effect */
+    filter: blur(px);
+    -webkit-filter: blur(px);
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* Position text in the middle of the page/image */
+  .bg-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+  }
+ 
+      </style>
+</head>
+<body>
+    <div class="bg-image"></div>
+    <div class="bg-text">
+    <h1 style="text-align: center; text-decoration: underline; color: rgb(27, 247, 251);" >Indian Penal Code, 1860</h1>
+    <div id="chapters-container"></div>
+</div>
+    <script src="main.js"></script>
+</body>
+</html>
